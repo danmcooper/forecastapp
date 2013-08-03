@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Weather Forecast</title>
+	<link type="text/css" href="/css/app.css" rel="stylesheet"></style>	
+	<script src="/js/thirdparty/jquery-2.0.3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoIykL279Oe-aDkAzhacX4x0QUq9ODFnM&sensor=false"></script>
+	<script src="/js/thirdparty/skycons.js"></script>	
+	<script src="/js/helpers.js"></script>
+	<script src="/js/map.js"></script>
+	<script src="/js/forecast.js"></script>	
+	<script src="/js/icons.js"></script>
+	<script src="/js/app.js"></script>
+</head>
+<body>
+	<form id="address-form">
+  		<label for="address-input">Address</label>
+		<input type="text" id="address-input">
+  		<label for="key-input">forecast.io key</label>		
+		<input type="text" id="key-input">
+		<input type="submit" id="address-submit" value="Go"><br />			
+	</form>
+	<div id="map-canvas"></div>
+	<div id="forecast" style="display: none;">
+		<div id="forecast-now" class="weather-block">
+			<div class="title">Current Weather</div>
+			<div><span id="forecast-now-summary"></span>, <span id="forecast-now-temp"></span>&deg;F</div>
+			<canvas class="icon" id="icon-now" width="64" height="64"></canvas>
+		</div>
+		<div id="forecast-minutely" class="weather-block">
+			<div class="title">Next hour</div>
+			<div id="forecast-minutely-summary"></div>	
+			<canvas class="icon" id="icon-hourly" width="64" height="64"></canvas>			
+		</div>
+		<div id="forecast-today" class="weather-block">
+			<div class="title">Today's Forecast</div>
+			<div id="forecast-hourly-summary"></div>				
+			<div>High of <span id="forecast-today-high-temp"></span>&deg;F, Low of <span id="forecast-today-low-temp"></span>&deg;F</div>
+			<canvas class="icon" id="icon-today" width="64" height="64"></canvas>
+		</div>		
+		<div id="forecast-weekly" class="weather-block">		
+			<div class="title">Weekly Forecast</div>
+			<div id="forecast-today-summary"></div>
+		</div>					
+	</div>
+</form>
+</body>
+</html>
