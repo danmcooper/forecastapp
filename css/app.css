@@ -1,44 +1,44 @@
 .title {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .weather-block {
-	width: 150px;
-	padding: 5px;
-	text-align: center;
-	display: block;
-	position: absolute;
-	top: 60px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 60px;
 }
 
 .weather-block .icon {
-	position: absolute;
-	top: 120px;
-	left: 48px;
-}		
+    position: absolute;
+    top: 120px;
+    left: 48px;
+}       
 
 body {
-	min-width: 940px;
+    min-width: 940px;
 }
 
 #map-canvas {
-	width: 320px;
-	height: 320px; 
-	display: inline-block;"			
+    width: 320px;
+    height: 320px; 
+    display: inline-block;"         
 }
 
 #forecast-now {
-	left: 330px;
+    left: 330px;
 }
 
 #forecast-today {
-	left: 480px;
+    left: 480px;
 }
 
 #forecast-minutely {
-	left: 630px;
+    left: 630px;
 }
 
 #forecast-weekly {
-	left: 780px;
-}	
+    left: 780px;
+}   
