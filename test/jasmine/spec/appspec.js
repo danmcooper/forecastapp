@@ -33,5 +33,4 @@ describe("app", function() {
     expect(APP.HELPERS.htmlDecode).toBeDefined();
     expect(APP.HELPERS.forecastIOToSkycons).toBeDefined();         
   });
-
 });
